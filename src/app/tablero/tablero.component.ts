@@ -18,4 +18,8 @@ export class TableroComponent implements OnInit {
     this.ingredientes.push(valor);
   }
 
+  eliminarIngrediente(indice: number) {
+    this.ingredientes.splice(indice, 1);
+  }
+
 }

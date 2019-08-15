@@ -3,6 +3,9 @@
 <app-entrada-ingrediente (valor)="agregarIngrediente($event)"></app-entrada-ingrediente>
 
 <h3>Ingredientes escogidos</h3>
-<pre>
-  {{ ingredientes | json }}
-</pre>
+
+<ul id="ingredientes">
+  <li *ngFor="let ingrediente of ingredientes; let i = index">
+    {{ ingrediente }} <button type="button" (click)="eliminarIngrediente(i)">Eliminar</button>
+  </li>
+</ul>
