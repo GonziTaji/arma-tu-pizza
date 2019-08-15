@@ -1,6 +1,6 @@
-# InputOutput
+# Arma tu pizza
 
-Elije tu pizza como caso de estudio.
+Pequeña aplicación para armar una pizza como caso de estudio.
 
 ## Ideas a aplicar
 

@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { TableroComponent } from './tablero.component';
+import { PizzaBoardComponent } from './pizza-board.component';
 
-describe('TableroComponent', () => {
-  let component: TableroComponent;
-  let fixture: ComponentFixture<TableroComponent>;
+describe('PizzaBoardComponent', () => {
+  let component: PizzaBoardComponent;
+  let fixture: ComponentFixture<PizzaBoardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TableroComponent ]
+      declarations: [ PizzaBoardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TableroComponent);
+    fixture = TestBed.createComponent(PizzaBoardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

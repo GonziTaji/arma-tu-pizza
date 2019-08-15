@@ -1,0 +1,19 @@
+<h1>Build your pizza</h1>
+
+<app-topping-selector (value)="addTopping($event)"></app-topping-selector>
+
+<h3>Selected toppings</h3>
+
+<button type="button" (click)="removeAllToppings()" [disabled]="toppings.length == 0">
+  Remove all
+</button>
+
+<ul id="toppings">
+  <li *ngFor="let topping of toppings; let i = index">
+    {{ topping }} <button type="button" (click)="removeTopping(i)">Remove</button>
+  </li>
+</ul>
+
+<button type="button" (click)="saveToppings()">
+  Save
+</button>

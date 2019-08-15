@@ -4,14 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { TableroComponent } from './tablero/tablero.component';
-import { EntradaIngredienteComponent } from './entrada-ingrediente/entrada-ingrediente.component';
+import { PizzaBoardComponent } from './pizza-board/pizza-board.component';
+import { ToppingSelectorComponent } from './topping-selector/topping-selector.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableroComponent,
-    EntradaIngredienteComponent
+    PizzaBoardComponent,
+    ToppingSelectorComponent
   ],
   imports: [
     BrowserModule,
