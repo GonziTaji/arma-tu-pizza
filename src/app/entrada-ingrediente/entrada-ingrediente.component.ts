@@ -15,8 +15,10 @@ export class EntradaIngredienteComponent {
   constructor() {}
 
   enviarValor() {
-    this.emisor.emit(this.valor);
-    this.valor = '';
+    if (this.valor !== '') {
+      this.emisor.emit(this.valor);
+      this.valor = '';
+    }
   }
 
 }
